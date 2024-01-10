@@ -35,5 +35,15 @@ class RomanNumeralsUtilTest {
 
 		assertThat(result).isEqualTo("MMMCMXLIV");
 	}
+	
+	@Test
+	void givenMDCCCXCVIIIRoman_WhenConvertingToArabic_ThenReturn1898() {
+
+		String roman = "MDCCCXCVIII";
+
+		int result = RomanNumeralsUtil.romanToArabic(roman);
+
+		assertThat(result).isEqualTo(1898);
+	}
 
 }
